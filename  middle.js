@@ -90,3 +90,34 @@ const eqArrays = function(...) {
   middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
 
   
+
+  // let person = {
+  //   name: "Paul",
+  //   address: {
+  //     street: "310 W 95th",
+  //     city: "New York",
+  //     zipCode: 10027
+  //   }
+  // };
+
+
+  // person["phoneNumbers"] instanceof Object
+
+
+
+  var planetMoons = {
+    mercury: 0,
+    venus: 0,
+    earth: 1,
+    mars: 2,
+    jupiter: 67,
+    saturn: 62,
+    uranus: 27,
+    neptune: 14
+  };
+
+
+  for (var planet in planetMoons) {
+    var numberOfMoons = planetMoons[planet];
+    console.log("Planet: " + planet + ", # of Moons: "+ numberOfMoons);
+  }
